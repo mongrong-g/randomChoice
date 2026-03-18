@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>랜덤뽑기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        html {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        body {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: #000;
+        }
+
+        #gameContainer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            max-width: calc(100vh * 581 / 423);
+            max-height: calc(100vw * 423 / 581);
+            background-image: url('images/Background.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        /* 결과 카드 래퍼 */
+        #resultCardWrapper {
+            perspective: 100vmin;
+            width: 41%;
+            height: 67%;
+            position: absolute;
+            right: 9%;
+            top: 33%;
+            z-index: 50;
+            container-type: size;
+        }
+
+        /* 결과 카드 */
+        #resultCard {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform-style: preserve-3d;
+            backface-visibility: visible;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 카드 결과 텍스트 */
+        .card-result {
+            font-size: 18cqw;
+            font-weight: bold;
+            color: #4FC3F7;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+            padding: 2%;
+            max-width: 90%;
+            text-shadow: 1.5cqw 1.5cqw 0px rgba(0, 51, 102, 0.8);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-result.show {
+            opacity: 1;
+        }
+
+        /* 결과 카드 등장 애니메이션 */
+        @keyframes cardAppear {
+            0% {
+                transform: rotateY(90deg) rotateX(-20deg) rotateZ(-10deg) scale(0.05);
+                opacity: 0;
+            }
+            20% {
+                transform: rotateY(-270deg) rotateX(-15deg) rotateZ(-8deg) scale(0.2);
+                opacity: 0.4;
+            }
+            50% {
+                transform: rotateY(-630deg) rotateX(-10deg) rotateZ(-6deg) scale(0.5);
+                opacity: 0.6;
+            }
+            80% {
+                transform: rotateY(-990deg) rotateX(-5deg) rotateZ(-3deg) scale(0.85);
+                opacity: 0.85;
+            }
+            95% {
+                transform: rotateY(-1080deg) rotateX(0deg) rotateZ(0deg) scale(0.99);
+                opacity: 0.98;
+            }
+            100% {
+                transform: rotateY(-1080deg) rotateX(0deg) rotateZ(0deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        #resultCard.animate {
+            animation: cardAppear 2s ease-out forwards;
+        }
+
+        /* Paper Units 컨테이너 */
+        #paperUnitsContainer {
+            position: absolute;
+            top: 0.5%;
+            left: 5%;
+            right: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 1%;
+            z-index: 10;
+        }
+
+        .paper-row {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5%;
+        }
+
+        /* Paper Unit */
+        .paper-unit {
+            width: 8.5%;
+            aspect-ratio: 1 / 1;
+            position: relative;
+            overflow: hidden;
+            container-type: size;
+        }
+
+        .paper-unit .paper {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('images/paper/paper_01.png');
+        }
+
+        .paper-unit .paper-text-wrapper {
+            position: absolute;
+            top: 41%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .paper-unit .paper-text {
+            font-size: 25cqw;
+            font-weight: bold;
+            color: #8B0000;
+            text-align: center;
+            text-shadow: 2cqw 2cqw 2.5cqw rgba(255, 255, 255, 0.8);
+            transform: translateY(-80%);
+            opacity: 1;
+            transition: transform 0.1s linear;
+            margin-left: 20%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Star */
+        .star {
+            position: absolute;
+            width: 5%;
+            aspect-ratio: 1 / 1;
+            background-image: url('images/Star.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+            opacity: 0;
+            z-index: 5;
+        }
+
+        @keyframes starFade {
+            0% {
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes starRotate {
+            0% {
+                transform: scale(0.5) rotate(0deg);
+            }
+            30% {
+                transform: scale(1) rotate(-27deg);
+            }
+            100% {
+                transform: scale(1) rotate(-90deg);
+            }
+        }
+
+        /* Rabbit 버튼 */
+        #rabbitButton {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            width: 27%;
+            aspect-ratio: 1 / 1;
+            background-image: url('images/rabbit_button_normal.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        #rabbitButton:active {
+            background-image: url('images/rabbit_button_over_push.png');
+        }
+
+        /* 컨트롤 버튼 */
+        #controls {
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+            text-align: center;
+            z-index: 100;
+        }
+
+        button {
+            padding: 1.5vmin 3vmin;
+            margin: 0 1vmin;
+            font-size: 2vmin;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 1vmin;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        /* 리셋 버튼 - 빨간색 */
+        button.reset-button {
+            background-color: #f44336;
+        }
+
+        button.reset-button:hover {
+            background-color: #da190b;
+        }
+
+        /* 닫기 버튼 - 회색 */
+        button.close-button {
+            background-color: #757575;
+        }
+
+        button.close-button:hover {
+            background-color: #616161;
+        }
+
+        /* 전체화면 버튼 */
+        #fullscreenBtn {
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            width: 5%;
+            aspect-ratio: 1 / 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 0.3vmin solid rgba(255, 255, 255, 0.3);
+            border-radius: 1vmin;
+            cursor: pointer;
+            z-index: 150;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5vmin;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        #fullscreenBtn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #fullscreenBtn:active {
+            transform: scale(0.9);
+        }
+
+        /* 전체화면 시작 안내 오버레이 */
+        #fullscreenOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3vh;
+        }
+
+        #fullscreenOverlay.show {
+            display: flex;
+        }
+
+        .overlay-text {
+            color: white;
+            font-size: 4vmin;
+            text-align: center;
+            padding: 0 5vw;
+        }
+
+        .overlay-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 2vmin;
+            padding: 3vmin 6vmin;
+            font-size: 4vmin;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .overlay-button:hover {
+            background-color: #45a049;
+        }
+
+        .overlay-button:active {
+            transform: scale(0.95);
+        }
+
+        /* 커스텀 알림 모달 */
+        #customAlert {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 5000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #customAlert.show {
+            display: flex;
+        }
+
+        .alert-box {
+            background: white;
+            border-radius: 3vmin;
+            padding: 5vmin;
+            max-width: 80vw;
+            text-align: center;
+        }
+
+        .alert-message {
+            font-size: 4vmin;
+            color: #333;
+            margin-bottom: 4vmin;
+            white-space: pre-line;
+        }
+
+        .alert-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 2vmin;
+            padding: 2vmin 5vmin;
+            font-size: 3.5vmin;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .alert-button:hover {
+            background-color: #45a049;
+        }
+
+        .alert-button:active {
+            transform: scale(0.95);
+        }
+
+        .alert-buttons {
+            display: flex;
+            gap: 2vmin;
+            justify-content: center;
+        }
+
+        .alert-button-secondary {
+            background-color: #999;
+        }
+
+        .alert-button-secondary:hover {
+            background-color: #777;
+        }
+
+        /* 명단 관리 모달 */
+        #nameListModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nameListModal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 2vmin;
+            padding: 3vmin;
+            width: 80vw;
+            max-width: calc(80vh * 1.3);
+            height: 80vh;
+            max-height: calc(80vw / 1.3);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            font-size: 3vmin;
+            font-weight: bold;
+            margin-bottom: 2vmin;
+            color: #333;
+            flex-shrink: 0;
+        }
+
+        .textarea-container {
+            display: flex;
+            border: 0.3vmin solid #ddd;
+            border-radius: 1vmin;
+            overflow: hidden;
+            background: white;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .textarea-container:focus-within {
+            border-color: #4CAF50;
+        }
+
+        .line-numbers {
+            background: #f5f5f5;
+            color: #999;
+            padding: 2vmin 1.5vmin;
+            text-align: right;
+            font-size: 2vmin;
+            font-family: 'Courier New', monospace;
+            line-height: 1.5;
+            user-select: none;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            white-space: pre;
+            min-width: 5vmin;
+            border-right: 0.1vmin solid #ddd;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE/Edge */
+        }
+
+        .line-numbers::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+
+        .modal-textarea {
+            flex: 1;
+            padding: 2vmin;
+            border: none;
+            font-size: 2vmin;
+            font-family: Arial, sans-serif;
+            resize: none;
+            line-height: 1.5;
+            overflow-y: auto;
+            min-height: 0;
+        }
+
+        .modal-textarea:focus {
+            outline: none;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1vmin;
+            margin-top: 2vmin;
+            justify-content: center;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+
+        .modal-buttons button {
+            font-size: 2vmin;
+            padding: 1.5vmin 2.5vmin;
+            white-space: nowrap;
+        }
+
+        .modal-info {
+            background: #e8f4f8;
+            border-left: 0.5vmin solid #4CAF50;
+            padding: 2vmin;
+            margin-bottom: 2vmin;
+            border-radius: 1vmin;
+            font-size: 1.8vmin;
+            line-height: 1.6;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Paper Units -->
+        <div id="paperUnitsContainer"></div>
+
+        <!-- 결과 카드 -->
+        <div id="resultCardWrapper">
+            <div id="resultCard">
+                <div class="card-result" id="cardResult"></div>
+            </div>
+        </div>
+
+        <!-- Rabbit 버튼 -->
+        <div id="rabbitButton" onclick="playResultCardAnimation()"></div>
+
+        <!-- 컨트롤 버튼 -->
+        <div id="controls">
+            <button onclick="openNameListModal()">명단 관리</button>
+            <button class="reset-button" onclick="reset()">리셋</button>
+        </div>
+
+        <!-- 전체화면 버튼 -->
+        <div id="fullscreenBtn" onclick="toggleFullscreen()">⛶</div>
+    </div>
+
+    <!-- 커스텀 알림 모달 -->
+    <div id="customAlert">
+        <div class="alert-box">
+            <div class="alert-message" id="alertMessage"></div>
+            <div class="alert-buttons" id="alertButtons">
+                <button class="alert-button" onclick="closeCustomAlert()">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 전체화면 시작 안내 오버레이 -->
+    <div id="fullscreenOverlay">
+        <div class="overlay-text">
+            🎯 랜덤뽑기<br>
+            전체화면 가로 모드로 시작하시겠습니까?
+        </div>
+        <button class="overlay-button" onclick="startFullscreen()">전체화면으로 시작</button>
+        <button class="overlay-button" onclick="closeOverlay()" style="background-color: #666;">건너뛰기</button>
+    </div>
+
+    <!-- 명단 관리 모달 -->
+    <div id="nameListModal">
+        <div class="modal-content">
+            <div class="modal-header">명단 관리</div>
+            <div class="modal-info">
+                <strong>📝 명단 입력 규칙:</strong><br>
+                • 한 줄에 하나씩 입력 (최대 40명)<br>
+                • 빈 줄은 자동으로 무시됩니다<br>
+                • 저장 버튼을 누르면 자동 저장됩니다
+            </div>
+            <div class="textarea-container">
+                <div class="line-numbers" id="lineNumbers">1</div>
+                <textarea id="nameListTextarea" class="modal-textarea" placeholder="명단을 입력하세요 (한 줄에 하나씩)&#10;예시:&#10;김철수&#10;이영희&#10;박민수"></textarea>
+            </div>
+            <div class="modal-buttons">
+                <button onclick="saveNameList()">💾 저장</button>
+                <button onclick="document.getElementById('fileInput').click()">📁 파일 불러오기</button>
+                <button id="shareButton" onclick="shareNameList()">📤 공유하기</button>
+                <button class="close-button" onclick="closeNameListModal()">닫기</button>
+            </div>
+            <input type="file" id="fileInput" style="display: none;" accept=".txt,.csv" onchange="loadNameListFile(event)">
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <script>
+        // 이름 목록 (localStorage에서 관리)
+        let names = [];
+        let isAnimating = false; // 애니메이션 진행 상태
+        let paperAnimationTimeout = null; // paper 애니메이션 타이머
+
+        // 결과 카드 요소
+        const resultCard = document.getElementById('resultCard');
+        const cardResult = document.getElementById('cardResult');
+        const cardSound = new Audio('sounds/Card.mp3');
+        const pickSound = new Audio('sounds/pick.mp3');
+        const clickSound = new Audio('sounds/Click.mp3');
+
+        // Paper 이미지 프리로드
+        const paperImages = [];
+        for (let i = 1; i <= 10; i++) {
+            const img = new Image();
+            const frameStr = String(i).padStart(2, '0');
+            img.src = `images/paper/paper_${frameStr}.png`;
+            paperImages.push(img);
+        }
+
+        // Star 이미지 프리로드
+        const starImage = new Image();
+        starImage.src = 'images/Star.png';
+
+        // Rabbit 버튼 이미지 프리로드
+        const rabbitButtonNormal = new Image();
+        rabbitButtonNormal.src = 'images/rabbit_button_normal.png';
+        const rabbitButtonPush = new Image();
+        rabbitButtonPush.src = 'images/rabbit_button_over_push.png';
+
+        // Star 연속 생성
+        const gameContainer = document.getElementById('gameContainer');
+        let starInterval = null;
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+
+            // 랜덤 위치 (상단 절반 영역, % 기준)
+            const randomX = Math.random() * 85 + 5; // 5% ~ 90%
+            const randomY = Math.random() * 40 + 5; // 5% ~ 45% (상단 절반)
+
+            star.style.left = randomX + '%';
+            star.style.top = randomY + '%';
+
+            // 랜덤 크기 (1~2배) - 기본 5% 기준
+            const randomScale = 1 + Math.random();
+            star.style.width = (5 * randomScale) + '%';
+
+            // 랜덤 애니메이션 지속 시간 (1.5초 ~ 2.5초)
+            const duration = 1.5 + Math.random();
+            star.style.animation = `starFade ${duration}s ease-in-out forwards, starRotate ${duration}s linear forwards`;
+
+            gameContainer.appendChild(star);
+
+            // 애니메이션 종료 후 제거
+            setTimeout(() => {
+                if (star.parentNode) {
+                    star.remove();
+                }
+            }, duration * 1000);
+        }
+
+        // 랜덤 간격 생성 (가중치 적용)
+        function getRandomStarInterval() {
+            // 0.5초: 10%, 1초: 20%, 1.5초: 30%, 2초: 30%, 2.5초: 10%
+            const intervals = [0.5, 1, 1, 1.5, 1.5, 1.5, 2, 2, 2, 2.5];
+            const randomInterval = intervals[Math.floor(Math.random() * intervals.length)];
+            return randomInterval * 1000; // 밀리초로 변환
+        }
+
+        // 별 연속 생성 시작
+        function startStarAnimation() {
+            if (starInterval) return;
+
+            function scheduleNextStar() {
+                createStar();
+                const nextInterval = getRandomStarInterval();
+                starInterval = setTimeout(scheduleNextStar, nextInterval);
+            }
+
+            scheduleNextStar();
+        }
+
+        // 별 연속 생성 중지
+        function stopStarAnimation() {
+            if (starInterval) {
+                clearTimeout(starInterval);
+                starInterval = null;
+            }
+        }
+
+        // Paper Units 관리
+        const paperUnitsContainer = document.getElementById('paperUnitsContainer');
+        let paperUnits = [];
+        let drawnIndices = []; // 뽑은 인덱스 목록
+
+        // Paper Units 생성
+        function createPaperUnits() {
+            // 기존 units 제거
+            paperUnitsContainer.innerHTML = '';
+            paperUnits = [];
+
+            const totalCount = names.length;
+            if (totalCount === 0) return;
+
+            let unitIndex = 0;
+
+            // 3줄은 10개씩, 나머지 2줄은 5개씩
+            const rowSizes = [10, 10, 10, 5, 5];
+
+            for (let r = 0; r < rowSizes.length; r++) {
+                if (unitIndex >= totalCount) break;
+
+                const row = document.createElement('div');
+                row.className = 'paper-row';
+
+                const currentRowSize = Math.min(rowSizes[r], totalCount - unitIndex);
+
+                for (let i = 0; i < currentRowSize; i++) {
+                    createPaperUnit(row, unitIndex);
+                    unitIndex++;
+                }
+
+                paperUnitsContainer.appendChild(row);
+            }
+        }
+
+        // Paper Unit 생성 (단일)
+        function createPaperUnit(row, unitIndex) {
+            const unit = document.createElement('div');
+            unit.className = 'paper-unit';
+
+            const paper = document.createElement('div');
+            paper.className = 'paper';
+
+            const textWrapper = document.createElement('div');
+            textWrapper.className = 'paper-text-wrapper';
+
+            const text = document.createElement('div');
+            text.className = 'paper-text';
+
+            // Paper에는 이름만 표시
+            const currentName = names[unitIndex];
+            text.textContent = currentName;
+
+            textWrapper.appendChild(text);
+            unit.appendChild(paper);
+            unit.appendChild(textWrapper);
+            row.appendChild(unit);
+
+            paperUnits.push({
+                element: unit,
+                paper: paper,
+                text: text,
+                currentFrame: 1,
+                interval: null,
+                isPlaying: false,
+                index: unitIndex,
+                originalText: currentName
+            });
+        }
+
+        // Paper Unit 애니메이션 재생
+        function playPaperAnimation(unitIndex, name) {
+            const unit = paperUnits[unitIndex];
+            if (unit.isPlaying) return;
+
+            // 이름 설정
+            unit.text.textContent = name;
+
+            unit.isPlaying = true;
+            unit.currentFrame = 1;
+            updatePaperFrame(unitIndex, unit.currentFrame);
+
+            unit.interval = setInterval(() => {
+                unit.currentFrame++;
+                if (unit.currentFrame > 10) {
+                    clearInterval(unit.interval);
+                    unit.interval = null;
+                    unit.isPlaying = false;
+                    return;
+                }
+                updatePaperFrame(unitIndex, unit.currentFrame);
+            }, 100);
+        }
+
+        // Paper Unit 프레임 업데이트
+        function updatePaperFrame(unitIndex, frameNumber) {
+            const unit = paperUnits[unitIndex];
+            const frameStr = String(frameNumber).padStart(2, '0');
+            unit.paper.style.backgroundImage = `url('images/paper/paper_${frameStr}.png')`;
+
+            // 텍스트 애니메이션 (리니어)
+            const progress = (frameNumber - 1) / 9;
+            const yPos = -80 + (progress * 90);
+            unit.text.style.transform = `translateY(${yPos}%)`;
+        }
+
+        // Paper Unit 리셋
+        function resetPaperUnit(unitIndex) {
+            if (unitIndex >= paperUnits.length) return;
+
+            const unit = paperUnits[unitIndex];
+            if (unit.interval) {
+                clearInterval(unit.interval);
+                unit.interval = null;
+            }
+            unit.isPlaying = false;
+            unit.currentFrame = 1;
+            unit.paper.style.backgroundImage = 'url("images/paper/paper_01.png")';
+
+            // 원래 텍스트로 되돌림
+            unit.text.textContent = unit.originalText || '';
+
+            unit.text.style.transform = 'translateY(-80%)';
+        }
+
+        // 테스트 애니메이션
+        function testPaperAnimation() {
+            // 랜덤 유닛 선택
+            const randomIndex = Math.floor(Math.random() * paperUnits.length);
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            playPaperAnimation(randomIndex, randomName);
+        }
+
+        // 결과 카드 애니메이션 재생
+        function playResultCardAnimation() {
+            // 애니메이션 진행 중이면 무시
+            if (isAnimating) return;
+
+            // 명단이 없는 경우
+            if (names.length === 0) {
+                showAlert('⚠️ 명단이 비어있습니다!\n명단 관리 버튼을 눌러 명단을 입력해주세요.');
+                return;
+            }
+
+            // 남은 인덱스 확인
+            const remainingIndices = [];
+            for (let i = 0; i < names.length; i++) {
+                if (!drawnIndices.includes(i)) {
+                    remainingIndices.push(i);
+                }
+            }
+
+            if (remainingIndices.length === 0) {
+                showAlert('⚠️ 모든 추첨이 완료되었습니다!\n리셋 버튼을 눌러 다시 시작하세요.');
+                return;
+            }
+
+            // Click 사운드 재생
+            clickSound.currentTime = 0;
+            clickSound.play();
+
+            isAnimating = true; // 애니메이션 시작
+            resetResultCard();
+
+            // 0.5초 후 카드 애니메이션 시작
+            setTimeout(() => {
+                // 랜덤 카드 이미지 선택 (Card1 ~ Card6)
+                const randomCardNum = Math.floor(Math.random() * 6) + 1;
+                resultCard.style.backgroundImage = `url('images/Card${randomCardNum}.png')`;
+
+                // 남은 인덱스 중에서 랜덤 선택
+                const randomIndex = remainingIndices[Math.floor(Math.random() * remainingIndices.length)];
+                const selectedName = names[randomIndex];
+
+                // 중복 체크: 같은 이름이 여러 개 있는지 확인
+                const sameNameIndices = [];
+                for (let i = 0; i < names.length; i++) {
+                    if (names[i] === selectedName) {
+                        sameNameIndices.push(i);
+                    }
+                }
+
+                // 표시할 텍스트 생성
+                let displayText = selectedName;
+                if (sameNameIndices.length > 1) {
+                    // 중복이 있으면 명단에서의 번호 표시 (1-based)
+                    displayText = `${selectedName} (${randomIndex + 1})`;
+                }
+
+                // 선택된 인덱스를 data attribute에 저장
+                cardResult.textContent = displayText;
+                cardResult.setAttribute('data-selected-index', randomIndex);
+                cardResult.setAttribute('data-selected-name', selectedName);
+
+                // 사운드 재생
+                cardSound.currentTime = 0;
+                cardSound.play();
+
+                setTimeout(() => {
+                    resultCard.classList.add('animate');
+                }, 100);
+            }, 500);
+        }
+
+        // 애니메이션 종료 이벤트 리스너 - 카드 애니메이션 끝나면 paper 애니메이션 시작
+        resultCard.addEventListener('animationend', () => {
+            cardResult.classList.add('show');
+
+            // 이름 표시 시 pick 사운드 재생
+            pickSound.currentTime = 0;
+            pickSound.play();
+
+            // 선택된 인덱스와 이름을 미리 저장
+            const selectedIndex = parseInt(cardResult.getAttribute('data-selected-index'));
+            const selectedName = cardResult.getAttribute('data-selected-name');
+
+            // 뽑은 인덱스 즉시 추가 (중복 방지)
+            if (!drawnIndices.includes(selectedIndex)) {
+                drawnIndices.push(selectedIndex);
+            }
+
+            // pick 사운드 재생 완료 후 토끼 버튼 다시 활성화
+            pickSound.onended = function() {
+                isAnimating = false;
+            };
+
+            // 카드 애니메이션 끝나면 해당 인덱스의 paper 유닛에 애니메이션 실행
+            paperAnimationTimeout = setTimeout(() => {
+                if (selectedIndex !== -1 && selectedIndex < paperUnits.length) {
+                    playPaperAnimation(selectedIndex, selectedName);
+                }
+                paperAnimationTimeout = null;
+            }, 500);
+        });
+
+        // 결과 카드 리셋
+        function resetResultCard() {
+            resultCard.classList.remove('animate');
+            resultCard.style.transform = 'rotateY(90deg) rotateX(-20deg) rotateZ(-10deg) scale(0.05)';
+            resultCard.style.opacity = '0';
+            resultCard.style.backgroundImage = '';
+
+            // 결과 텍스트 숨기기
+            cardResult.classList.remove('show');
+            cardResult.textContent = '';
+
+            // 사운드 정지
+            cardSound.pause();
+            cardSound.currentTime = 0;
+            pickSound.pause();
+            pickSound.currentTime = 0;
+        }
+
+        // 전체 리셋
+        function reset() {
+            isAnimating = false; // 애니메이션 상태 초기화
+
+            // 예약된 paper 애니메이션 취소
+            if (paperAnimationTimeout) {
+                clearTimeout(paperAnimationTimeout);
+                paperAnimationTimeout = null;
+            }
+
+            resetResultCard();
+            drawnIndices = []; // 뽑은 인덱스 초기화
+
+            paperUnits.forEach((_, index) => {
+                resetPaperUnit(index);
+            });
+
+            // 별 제거
+            const stars = document.querySelectorAll('.star');
+            stars.forEach(star => star.remove());
+        }
+
+        // 명단 관리 함수
+        function loadNameListFromStorage() {
+            const saved = localStorage.getItem('randomChoiceNameList');
+            if (saved) {
+                names = saved.split('\n')
+                    .map(name => name.trim())
+                    .filter(name => name.length > 0);
+            } else {
+                // 기본 명단 (1-40)
+                names = Array.from({length: 40}, (_, i) => String(i + 1));
+                saveNameListToStorage();
+            }
+        }
+
+        function saveNameListToStorage() {
+            localStorage.setItem('randomChoiceNameList', names.join('\n'));
+        }
+
+        // 줄 번호 업데이트
+        function updateLineNumbers() {
+            const textarea = document.getElementById('nameListTextarea');
+            const lineNumbers = document.getElementById('lineNumbers');
+            const lines = textarea.value.split('\n').length;
+
+            let lineNumberText = '';
+            for (let i = 1; i <= lines; i++) {
+                lineNumberText += i + '\n';
+            }
+            lineNumbers.textContent = lineNumberText;
+        }
+
+        // 스크롤 동기화
+        function syncScroll() {
+            const textarea = document.getElementById('nameListTextarea');
+            const lineNumbers = document.getElementById('lineNumbers');
+            lineNumbers.scrollTop = textarea.scrollTop;
+        }
+
+        function openNameListModal() {
+            document.getElementById('nameListTextarea').value = names.join('\n');
+            updateLineNumbers();
+            document.getElementById('nameListModal').classList.add('show');
+        }
+
+        function closeNameListModal() {
+            document.getElementById('nameListModal').classList.remove('show');
+        }
+
+        function saveNameList() {
+            const text = document.getElementById('nameListTextarea').value;
+            let tempNames = text.split('\n')
+                .map(name => name.trim())
+                .filter(name => name.length > 0);
+
+            if (tempNames.length === 0) {
+                showAlert('⚠️ 명단이 비어있습니다!\n최소 1개 이상의 이름을 입력해주세요.');
+                return;
+            }
+
+            if (tempNames.length > 40) {
+                showAlert(
+                    `⚠️ 명단은 최대 40명까지만 가능합니다!\n입력된 인원이 ${tempNames.length}명입니다.\n처음 40명만 저장하시겠습니까?`,
+                    function() {
+                        // 확인 버튼 클릭 시
+                        names = tempNames.slice(0, 40);
+                        saveNameListToStorage();
+                        createPaperUnits();
+                        drawnIndices = [];
+                        closeNameListModal();
+                        showAlert('✅ 명단이 저장되었습니다! (총 40명)');
+                    },
+                    '40명만 저장',
+                    '다시 수정'
+                );
+                return;
+            }
+
+            names = tempNames;
+            saveNameListToStorage();
+            createPaperUnits(); // Paper Units 재생성
+            drawnIndices = []; // 뽑은 인덱스 초기화
+            closeNameListModal();
+            showAlert(`✅ 명단이 저장되었습니다! (총 ${names.length}명)`);
+        }
+
+        // 파일 불러오기
+        function loadNameListFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const buffer = e.target.result;
+
+                // 여러 인코딩 시도 (UTF-8, EUC-KR)
+                let text = '';
+                try {
+                    // 먼저 UTF-8 시도
+                    const decoder = new TextDecoder('utf-8', { fatal: true });
+                    text = decoder.decode(buffer);
+                } catch (error) {
+                    // UTF-8 실패 시 EUC-KR 시도
+                    try {
+                        const decoder = new TextDecoder('euc-kr');
+                        text = decoder.decode(buffer);
+                    } catch (error2) {
+                        // EUC-KR도 실패 시 CP949 시도
+                        try {
+                            const decoder = new TextDecoder('windows-949');
+                            text = decoder.decode(buffer);
+                        } catch (error3) {
+                            // 모두 실패 시 기본 UTF-8로
+                            const decoder = new TextDecoder('utf-8');
+                            text = decoder.decode(buffer);
+                        }
+                    }
+                }
+
+                document.getElementById('nameListTextarea').value = text;
+                updateLineNumbers();
+            };
+            reader.readAsArrayBuffer(file);
+
+            // input 값 초기화 (같은 파일 다시 선택 가능하도록)
+            event.target.value = '';
+        }
+
+        // 명단 공유하기
+        async function shareNameList() {
+            const text = document.getElementById('nameListTextarea').value;
+            if (!text.trim()) {
+                showAlert('⚠️ 공유할 명단이 없습니다!');
+                return;
+            }
+
+            // 모바일 기기 감지
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            // Web Share API 지원 확인 (모바일만)
+            if (navigator.share && isMobile) {
+                try {
+                    // 먼저 텍스트 공유 시도 (더 안정적)
+                    await navigator.share({
+                        title: '랜덤뽑기 명단',
+                        text: text
+                    });
+                } catch (err) {
+                    if (err.name !== 'AbortError') {
+                        console.log('Share failed:', err);
+                        // 공유 실패시 다운로드로 fallback
+                        downloadNameListFallback(text);
+                    }
+                }
+            } else {
+                // PC 또는 Web Share API 미지원시 다운로드
+                downloadNameListFallback(text);
+            }
+        }
+
+        // 공유 실패시 다운로드 fallback
+        function downloadNameListFallback(text) {
+            const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = '명단.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+            alert('✅ 파일이 다운로드되었습니다!');
+        }
+
+        // 모달 외부 클릭 시 닫기
+        document.getElementById('nameListModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeNameListModal();
+            }
+        });
+
+        // 전체화면 토글
+        async function toggleFullscreen() {
+            if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement) {
+                // 전체화면 진입
+                const elem = document.documentElement;
+                try {
+                    if (elem.requestFullscreen) {
+                        await elem.requestFullscreen();
+                    } else if (elem.webkitRequestFullscreen) {
+                        await elem.webkitRequestFullscreen();
+                    } else if (elem.mozRequestFullScreen) {
+                        await elem.mozRequestFullScreen();
+                    } else if (elem.msRequestFullscreen) {
+                        await elem.msRequestFullscreen();
+                    }
+
+                    // 전체화면 진입 후 가로 모드로 강제
+                    if (screen.orientation && screen.orientation.lock) {
+                        try {
+                            await screen.orientation.lock('landscape');
+                        } catch (err) {
+                            console.log('Orientation lock failed:', err);
+                        }
+                    }
+                } catch (err) {
+                    console.log('Fullscreen failed:', err);
+                }
+            } else {
+                // 전체화면 종료
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+
+        // 전체화면으로 시작
+        async function startFullscreen() {
+            const elem = document.documentElement;
+            try {
+                if (elem.requestFullscreen) {
+                    await elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    await elem.webkitRequestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    await elem.mozRequestFullScreen();
+                } else if (elem.msRequestFullscreen) {
+                    await elem.msRequestFullscreen();
+                }
+
+                // 전체화면 진입 후 가로 모드로 강제
+                if (screen.orientation && screen.orientation.lock) {
+                    try {
+                        await screen.orientation.lock('landscape');
+                    } catch (err) {
+                        console.log('Orientation lock failed:', err);
+                    }
+                }
+            } catch (err) {
+                console.log('Fullscreen failed:', err);
+            }
+            closeOverlay();
+        }
+
+        // 오버레이 닫기
+        function closeOverlay() {
+            document.getElementById('fullscreenOverlay').classList.remove('show');
+        }
+
+        // 커스텀 알림 함수
+        function showAlert(message, confirmCallback = null, confirmText = '확인', cancelText = '취소') {
+            document.getElementById('alertMessage').textContent = message;
+            const buttonsContainer = document.getElementById('alertButtons');
+
+            if (confirmCallback) {
+                // 확인/취소 버튼 두 개
+                buttonsContainer.innerHTML = `
+                    <button class="alert-button" onclick="handleAlertConfirm()">${confirmText}</button>
+                    <button class="alert-button alert-button-secondary" onclick="closeCustomAlert()">${cancelText}</button>
+                `;
+                window.currentAlertCallback = confirmCallback;
+            } else {
+                // 확인 버튼 하나만
+                buttonsContainer.innerHTML = `
+                    <button class="alert-button" onclick="closeCustomAlert()">확인</button>
+                `;
+                window.currentAlertCallback = null;
+            }
+
+            document.getElementById('customAlert').classList.add('show');
+        }
+
+        function handleAlertConfirm() {
+            closeCustomAlert();
+            if (window.currentAlertCallback) {
+                window.currentAlertCallback();
+                window.currentAlertCallback = null;
+            }
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlert').classList.remove('show');
+            window.currentAlertCallback = null;
+        }
+
+        // 스페이스 키 이벤트 리스너
+        document.addEventListener('keydown', function(e) {
+            // 스페이스 키 (keyCode 32 또는 key === ' ')
+            if (e.key === ' ' || e.keyCode === 32) {
+                // 모달이 열려있거나 input/textarea에 포커스가 있으면 무시
+                if (document.getElementById('nameListModal').classList.contains('show') ||
+                    document.getElementById('customAlert').classList.contains('show') ||
+                    document.getElementById('fullscreenOverlay').classList.contains('show') ||
+                    e.target.tagName === 'INPUT' ||
+                    e.target.tagName === 'TEXTAREA' ||
+                    e.target.tagName === 'BUTTON') {
+                    return;
+                }
+
+                // 기본 동작(스크롤) 방지
+                e.preventDefault();
+
+                // 토끼 버튼 클릭과 동일하게 동작
+                playResultCardAnimation();
+            }
+        });
+
+        // 페이지 로드 시 오버레이 표시
+        window.addEventListener('load', function() {
+            // localStorage에 저장된 설정 확인
+            const skipFullscreenPrompt = localStorage.getItem('skipFullscreenPrompt');
+            if (!skipFullscreenPrompt) {
+                document.getElementById('fullscreenOverlay').classList.add('show');
+            }
+
+            // 공유 버튼 텍스트 동적 설정
+            const shareButton = document.getElementById('shareButton');
+            if (shareButton) {
+                // 모바일 기기 감지
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                if (navigator.share && isMobile) {
+                    shareButton.textContent = '📤 공유하기';
+                } else {
+                    shareButton.textContent = '⬇️ 다운로드';
+                }
+            }
+        });
+
+        // textarea 이벤트 리스너 설정
+        const textarea = document.getElementById('nameListTextarea');
+        textarea.addEventListener('input', updateLineNumbers);
+        textarea.addEventListener('scroll', syncScroll);
+
+        // 초기 상태 설정
+        loadNameListFromStorage();
+        createPaperUnits(); // Paper Units 생성
+        reset();
+
+        // 별 애니메이션 자동 시작
+        startStarAnimation();
+    </script>
+</body>
+</html>
